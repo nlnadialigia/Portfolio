@@ -1,0 +1,50 @@
+:root{
+    --dark: #000000;
+    --light: #f1f3f8;
+    --hover-color: #8305aa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+header a{
+    color: var(--light);
+}
+
+.about{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin: auto 3rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil img{
+    width: 8rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--light);
+    box-shadow: 0.1rem 0.1rem var(--hover-color);
+    margin-bottom: 1.5rem;
+}
+
+
