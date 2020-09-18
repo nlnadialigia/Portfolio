@@ -34,10 +34,10 @@ main h1{
     animation: play 8s ease;
 }
 
-@keyframes play{
+/* @keyframes play{
     from {opacity: 0;}
     to {opacity: 1;}
-}
+} */
 
 section{
     font-size: 2.5rem;
@@ -53,11 +53,11 @@ section{
     -webkit-text-fill-color: transparent;
     animation: play2 12s ease;
 }
-
+/* 
 @keyframes play2{
     from {opacity: 0;}
     to {opacity: 1;}
-}
+} */
 
 section p+p{
     margin-top: 1.5rem;

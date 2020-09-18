@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2881/2881142.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+
+    {% block head %}
+        <title>Portifolio</title>
+    {% endblock head %}
+</head>
+
+<body>
+    {% block content %}
+    {% endblock content %}
+
+    <footer>
+        <input type="checkbox" id="menu-hamburguer">
+
+    <label for="menu-hamburguer">
+        <div class="menu">
+            <span class="hamburguer"></span>
+        </div>
+    </label>
+
+    <ul>
+        <li>
+            <a href="https://github.com/nlnadialigia" target="_blank">
+                <img src="https://img.icons8.com/nolan/64/github.png" alt="Github"/>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/nlnadialigia/" target="_blank">
+                <img src="https://img.icons8.com/nolan/64/linkedin.png" alt="Linkedin"/>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:nlnadialigia@gmail.com">
+                <img src="https://img.icons8.com/nolan/64/new-post.png" alt="Email"/>
+            </a>
+        </li>
+    </ul>
+    </footer>
+    
+</body>
+</html>
