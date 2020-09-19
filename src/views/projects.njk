@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "layout.njk" %}
+
+{% block head %}
     <title>Projetos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2881/2881142.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/general.css">
     <link rel="stylesheet" href="/styles/projects.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
     <header>
         <a href="/">Home</a>
-        <h1>Meus projetos</h1>
         <a href="/about">Sobre mim</a>
     </header>
 
-
     <main>
+        <div id="title">
+            <p>Meus Projetos</p>       
+        </div>
         <div class="grid">
             <div class="items">
-                <a href="/homepage/projects/project01.html">Projeto 01</a>
+                <div class="hex">
+                    <a href="/homepage/projects/project01.html">
+                        projeto
+                    </a>
+                </div>
             </div>
             <div class="items">Projeto</div>
             <div class="items">Projeto</div>
@@ -37,6 +37,4 @@
     <section>
         <img src="/images/construction.webp" alt="Página em construção">
     </section>
-
-</body>
-</html>
+{% endblock %}

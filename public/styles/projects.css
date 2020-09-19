@@ -1,13 +1,20 @@
+:root{
+    --bg01: #1C1C1C;
+    --bg02: #4F4F4F;
+    --bg00: #FFF0F5;
+    --letter: #F5FFFA;
+}
+
 body{
     background-color: var(--light);
 }
 
 header, footer{
-    background-color: var(--dark);
+    margin: 0;
 }
 
 header a{
-    color: var(--light);
+    color: var(--dark);
 }
 
 header h1{
@@ -17,41 +24,92 @@ header h1{
 }
 
 main{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
     margin: 3rem auto;
     position: relative;
 }
 
-main .menu{
+main #title p {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    text-transform: uppercase;
+    word-break: break-word;
+    white-space: pre-wrap;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--bg01);
+    margin-top: 5rem;
+    width: 1px;
     position: absolute;
-    top: 2rem;
-    left: -2rem;
+    left: 1.5rem;
+    animation: blink 6s linear infinite;
+}
+
+@keyframes blink{
+    0% { opacity: 0.3; color: var(--hover-color);}
+    5% { opacity: 1;}
+    10% { opacity: 0.3; color: var(--hover-color);}
+    15% { opacity: 1;}
+    20% { opacity: 0.3;color: var(--hover-color);}
+    25% { opacity: 1;}
 }
 
 main .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
+    gap: 8%;
     align-items: center;
     justify-content: center;
     
 }
 
 main .grid .items{
-    background-color: green;
     height: 15rem;
     width: 12rem;
     border-radius: 0.5rem;
+    background: linear-gradient(to right, var(--bg01) 50%, var(--bg02) 50%);
+    box-shadow: 10px 5px 5px var(--light);
+    transition: transform 0.8s cubic-bezier(0, 0, 0.2, 1);
+    position: relative;
 }
 
+main .grid .items:hover{
+    transform: translateY(-10px);
+    transform: scale(1.2);
+    box-shadow: 10px 5px 5px var(--bg01);
+}
+
+.grid .items a{
+    width: 7rem;
+    /* transform: rotate(-45deg); */
+    
+}
+
+.hex{
+    background-color: var(--light);
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin: auto;
+    position: absolute;
+    top: 34%;
+    left: 29%;
+    box-shadow: 10px 5px 5px var(--bg01);
+    transform: translate(-50%, -50%);
+    transform: rotate(45deg);
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);    
+}
+/* 
+.hex:hover{
+    width: 80px;
+    height: 80px;
+    top: 34%;
+    left: 29%;
+} */
+
 section{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding-top: 10rem;

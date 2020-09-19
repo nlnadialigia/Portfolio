@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="https://image.flaticon.com/icons/svg/2881/2881142.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/general.css">
-    <link rel="stylesheet" href="/styles/about.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
+{% extends "layout.njk" %}
 
-</head>
-<body>
+{% block head %}
+    <title>Sobre mim</title>
+    <link rel="stylesheet" href="/styles/about.css">
+{% endblock %}
+
+{% block content %}  
     <header>
         <a href="/">Home</a>
         <a href="/projects">Projetos</a>
@@ -29,6 +23,4 @@
         <h3>Ficou curioso?</h3>
         <p>Na página Projetos você pode conferir os que eu mais gostei... mas se quiser conhecer todo meu repositório... dá uma passeada no meu Github.</p>
     </main>
-
-</body>
-</html>
+{% endblock %}

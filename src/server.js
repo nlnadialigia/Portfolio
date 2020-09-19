@@ -16,14 +16,14 @@ server.get('/', function (req,res) {
 })
 
 server.get('/about', function (req,res) {
-    return res.render('about.html')
+    return res.render('about.njk')
 })
 
 server.get('/projects', function (req,res) {
-    return res.render('projects.html')
+    return res.render('projects.njk')
 })
 
 
-server.listen(3200, () => {
+server.listen(3300, () => {
     console.log('SERVER IS RUNNING');
 })
