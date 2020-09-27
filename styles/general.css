@@ -179,3 +179,25 @@ ul a img{
         width: 3.2rem;
     }
 }
+
+@media(min-width: 1440px){
+    body{
+        max-width: 100%;
+    }
+
+    header{
+        padding: 8rem;
+    }
+
+    header a{
+        font-size: 6rem;
+    }
+
+    .hamburguer{
+        font-size: 6rem;
+    }
+
+    ul a img{
+        width: 18rem;
+    }
+}
