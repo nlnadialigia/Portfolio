@@ -1,4 +1,4 @@
-<h1 align="center">Portifólio Online</h1>
+<h1 align="center">Portfólio Online</h1>
 
 <p align="center">
   <img src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1171&q=80">
@@ -17,8 +17,6 @@ ___
 
 <h3 align="center">
   <a href="#information_source-sobre">Sobre</a>&nbsp;|&nbsp;
-  <a href="#rocket-tecnologias-utilizadas">Tecnologias</a>&nbsp;|&nbsp;
-  <a href="#link-como-contribuir">Como Contribuir</a>&nbsp;|&nbsp;
   <a href="#licença">Licença</a>
 </h3>
 
@@ -35,18 +33,9 @@ Sou Nádia Ligia, contadora de formação e profissão, que decidiu fazer uma tr
 
 Atualmente sou estudante Full Stack e Mobile, apaixonada por jogos, então incorporei aos meus estudos aprofundamento dos conceitos com pequenos jogos.
 
-Você pode acompanhar essa história através do Github ou visitar o meu Portifólio Online: 
+Você pode acompanhar essa história através do Github ou visitar o meu Portfólio Online: 
+
 ## (link)
-
-<br>
-<br>
-
-## :link: Como contribuir 
-
-### Tem alguma sugestão?
-
-- Sinta-se à vontade para abrir uma [Issues](link da Issues do Github).
-- Aceito críticas também... desde que contributivas.
 
 <br>
 <br>

@@ -24,11 +24,17 @@ header h1{
 }
 
 main{
-    display: flex;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: 20rem 40rem 20rem;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto;
+    margin: auto;
     position: relative;
+}
+
+main #title{
+    display: flex;
 }
 
 main #title p {
@@ -39,7 +45,7 @@ main #title p {
     font-size: 3rem;
     font-weight: bold;
     color: var(--bg01);
-    margin-top: 5rem;
+    margin-top: 2rem;
     width: 1px;
     position: absolute;
     left: 1.5rem;
