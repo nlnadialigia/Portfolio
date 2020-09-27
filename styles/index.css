@@ -75,32 +75,6 @@ section h2{
     }
 }
 
-/* 
-@media(min-width: 1920px){
-    body{
-        width: 60%;
-    }
-    main{
-        padding: 10rem;
-    }
-    main h1{
-        font-size: 14rem;
-    }
-    
-    section{
-        width: 60%;
-        margin: auto;
-        font-size: 8rem;
-    }
-
-    section p+p{
-        margin-top: 3rem;
-    }
-    
-    section h2{
-        margin-top: 9rem;
-    }
-} */
 
 
 

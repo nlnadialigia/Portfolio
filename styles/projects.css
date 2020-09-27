@@ -138,19 +138,4 @@ section img{
         width: 15rem;
     }
 }
-/* 
-@media (min-width: 1440px){
-    body{
-        width: 80%;
-        margin: auto;
-    }
 
-    header{
-        width: 80%;
-        margin: auto;
-    }
-
-    section img{
-        width: 200rem;
-    }
-} */
