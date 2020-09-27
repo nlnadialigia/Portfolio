@@ -1,33 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: var(--dark);
-    color: var(--light);
-}
-
-header a{
-    color: var(--light);
-}
-
-header a:hover{
-    transform: none;
-}
 
 .about{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 0 2rem;
-    margin: auto 3rem;
-}
-
-.about p{
-    font-size: 1.5rem;
-    line-height: 2rem;
-    padding-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .perfil{
@@ -35,12 +14,104 @@ header a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: auto 2rem;
 }
 
 .perfil img{
-    width: 8rem;
+    width: 12rem;
     border-radius: 50%;
     border: 0.2rem solid var(--light);
     box-shadow: 0.1rem 0.1rem var(--hover-color);
     margin-bottom: 1.5rem;
+}
+
+.content{
+    margin: auto 2rem;
+}
+
+.content p{
+    color: var(--light);
+    font-size: 2.2rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.content h3{
+    margin-top: 2rem;
+    padding-bottom: 0;
+}
+
+.content i{
+    width: 2.2rem;
+}
+
+@media (max-height: 800px){
+    body{
+        padding-bottom: 2.5rem;
+    }
+    header{
+        height: 3rem;
+        padding-top: 0.5rem;
+    }
+    .about{
+        margin-top: 0;
+    }
+
+    #menu{
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    body,header{
+        background: var(--dark);
+    }
+
+    header a+a{
+        color: var(--dark);
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .perfil, header{
+        margin: 0;
+        background: var(--light);
+    }
+
+    .perfil img{
+        margin-top: 2rem;
+    }
+
+    .perfil h2{
+        font-size: 2rem;
+        color: var(--hover-color);
+    }
+
+    .perfil p{
+        margin: 0 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .content{
+        background: var(--dark);
+        margin: 0;
+        padding: 0;
+    }
+
+    .content p{
+        margin: 2rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    #social{
+        justify-content: center;
+    }
 }
