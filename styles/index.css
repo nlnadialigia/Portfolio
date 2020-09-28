@@ -58,7 +58,9 @@ section h2{
     }
 
     main h1{
+        background-color: var(--light);
         -webkit-text-fill-color: var(--dark);
+        background-clip: border-box;
         font-size: 3.5rem;
         color: var(--dark);
     }
