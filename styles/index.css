@@ -58,9 +58,9 @@ section h2{
     }
 
     main h1{
-        background-color: var(--light);
+        background: var(--light);
         -webkit-text-fill-color: var(--dark);
-        background-clip: border-box;
+        background-clip: none;
         font-size: 3.5rem;
         color: var(--dark);
     }
@@ -70,7 +70,9 @@ section h2{
         margin: 0 1rem;
         padding: 0 1rem;
         color: var(--light);
+        background: var(--dark);
         -webkit-text-fill-color: var(--light);
+        background-clip: none;
     }
 
     :section p+p{
