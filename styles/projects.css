@@ -126,6 +126,15 @@ section img{
 }
 
 @media(max-width: 420px){
+    body{
+        background: var(--dark);
+    }
+
+    header{
+        background: var(--light);
+    }
+
+    
     #social{
         justify-content: center;
     }

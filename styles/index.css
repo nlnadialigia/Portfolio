@@ -54,16 +54,21 @@ section h2{
 @media(max-width: 420px){
     main{
         padding: 0;
+        background: var(--light);
     }
 
     main h1{
+        -webkit-text-fill-color: var(--dark);
         font-size: 3.5rem;
+        color: var(--dark);
     }
 
     section{
-        font-size: 2rem;
-        margin: 0 1.5rem;
-        padding: 0 1.5rem;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+        padding: 0 1rem;
+        color: var(--light);
+        -webkit-text-fill-color: var(--light);
     }
 
     :section p+p{
@@ -71,10 +76,9 @@ section h2{
     }
 
     section h2{
-        margin-top: 0.5rem;
+        margin-top: 1.5rem;
     }
 }
-
 
 
 

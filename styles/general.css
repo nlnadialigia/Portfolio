@@ -141,30 +141,23 @@ ul a img{
 
 @media(max-width: 420px){
     body{
+        background: var(--dark);
         padding-bottom: 0;
     }
-    footer{
-        display: none;
-    }
 
-    #social{
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        margin-top: 2rem;
-    }
-    #social img{
-        width: 4rem;
-    }
-}
-
-@media(max-width: 360px){
-    body{
-        padding-bottom: 0;
-    }
     header{
-        padding: 0 1rem;
+        background: var(--light);
+        height: 4rem;
     }
+
+    header a{
+        font-size: 1.5rem;
+    }
+
+    header a+a{
+        color: var(--dark);
+    }
+
     footer{
         display: none;
     }
@@ -172,12 +165,14 @@ ul a img{
     #social{
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: center;
         margin-top: 2rem;
     }
+
     #social img{
-        width: 3.2rem;
+        width: 3rem;
     }
 }
+
 
 
