@@ -75,25 +75,25 @@ input{
 .hamburguer:hover{
     animation: none;
     background: linear-gradient(var(--dark), var(--hover-color), var(--light));
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @keyframes loop{
     0% {
         background: linear-gradient(var(--light), var(--dark));
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     100% {
         background: linear-gradient(var(--dark), var(--hover-color), var(--light));
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
 
 input:checked ~ label #menu{
-    box-shadow: 0 0 0 150vw var(--dark);
+    box-shadow: 0 0 0 200vw var(--dark);
 }
 
 /* CONTATOS */
@@ -103,7 +103,7 @@ ul{
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
-    transition-delay: 0.2s;
+    transition-delay: 0.2s; 
     opacity: 0;
 }
 
@@ -173,6 +173,3 @@ ul a img{
         width: 3rem;
     }
 }
-
-
-

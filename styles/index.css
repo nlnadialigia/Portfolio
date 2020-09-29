@@ -13,7 +13,7 @@ main h1{
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, var(--dark) 50%,  var(--light) 50%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: play 3s ease;
 }
@@ -33,7 +33,7 @@ section{
     padding: 0 3rem;
     margin: auto 3rem;
     background: linear-gradient(to right, var(--dark) 50%,  var(--light) 50%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: play2 3s ease;
 }
@@ -60,7 +60,7 @@ section h2{
     main h1{
         background: var(--light);
         -webkit-text-fill-color: var(--dark);
-        background-clip: none;
+        -webkit-background-clip: none;
         font-size: 3.5rem;
         color: var(--dark);
     }
@@ -72,7 +72,7 @@ section h2{
         color: var(--light);
         background: var(--dark);
         -webkit-text-fill-color: var(--light);
-        background-clip: none;
+        -webkit-background-clip: none;
     }
 
     :section p+p{
