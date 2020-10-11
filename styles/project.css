@@ -14,6 +14,37 @@ header a{
     color: var(--light);
 }
 
+.construction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+main{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--hover-color);
+}
+
 footer{
     background-color: var(--dark);
     position: fixed;
@@ -25,6 +56,4 @@ footer{
     gap: 2rem;
     align-items: center;
     justify-content: center;
-
-
 }

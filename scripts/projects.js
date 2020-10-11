@@ -1,11 +1,10 @@
 const cards = document.getElementById('grid')
 const projects = [
-    {link: 'wizard-project.html', image: 'logo-wizard.png'},
-    {link: 'project02.html', image: ''},
-    {link: 'project03.html', image: ''},
-    {link: 'project04.html', image: ''},
-    {link: 'project05.html', image: ''},
-    {link: 'project06.html', image: ''},
+    {name: 'rocketseat', link: 'rocketseat.html', image: 'rocket.png'},
+    {name: 'dio', link: 'dio.html', image: 'dio.png'},
+    {name: 'igti', link: 'igti.html', image: 'igti.png'},
+    {name: 'wizard', link: 'wizard.html', image: 'logo-wizard.png'},
+    {name: 'others', link: 'others.html', image: 'others.png'},
 ]
 
 let cardHTML = ''
@@ -14,7 +13,7 @@ projects.forEach(projects => {
     cardHTML += `
     <div class="items">
         <a href="../views/projects/${projects.link}">
-            <img src="../images/${projects.image}">
+            <img class="${projects.name}"src="../images/${projects.image}">
         </a>
     </div>
     `
