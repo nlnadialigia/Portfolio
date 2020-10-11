@@ -31,7 +31,7 @@ Hello Word!
 
 Sou Nádia Ligia, contadora de formação e profissão, que decidiu fazer uma transição de carreira para a programação.
 
-Atualmente sou estudante Full Stack e Mobile, apaixonada por jogos, então incorporei aos meus estudos aprofundamento dos conceitos com pequenos jogos.
+Atualmente sou estudante Full Stack, apaixonada por jogos, então incorporei aos meus estudos aprofundamento dos conceitos com pequenos jogos.
 
 Você pode acompanhar essa história através do Github ou visitar o meu [Portfólio Online](https://www.nlnadialigia.com/) 
 
