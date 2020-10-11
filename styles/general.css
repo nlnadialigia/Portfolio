@@ -104,37 +104,3 @@ input{
 
 /*  RESPONSIVE  */
 
-@media(max-width: 420px){
-    body{
-        background: var(--dark);
-        padding-bottom: 0;
-    }
-
-    header{
-        background: var(--light);
-        height: 4rem;
-    }
-
-    header a{
-        font-size: 1.5rem;
-    }
-
-    header a+a{
-        color: var(--dark);
-    }
-
-    footer{
-        display: none;
-    }
-
-    #social{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-
-    #social img{
-        width: 3rem;
-    }
-}
