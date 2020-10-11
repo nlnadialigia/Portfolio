@@ -1,12 +1,21 @@
 
+body{
+    background-color: var(--light);
+}
+
 .about{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.about p{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .perfil{
@@ -18,7 +27,7 @@
 }
 
 .perfil img{
-    width: 12rem;
+    width: 10rem;
     border-radius: 50%;
     border: 0.2rem solid var(--light);
     box-shadow: 0.1rem 0.1rem var(--hover-color);
@@ -27,13 +36,17 @@
 
 .content{
     margin: auto 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .content p{
-    color: var(--light);
-    font-size: 2.2rem;
+    text-align: justify;
+    font-size: 1.8rem;
     font-weight: lighter;
-    line-height: 2.5rem;
+    
     margin-top: 1.5rem;
 }
 

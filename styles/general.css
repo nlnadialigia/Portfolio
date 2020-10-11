@@ -12,11 +12,10 @@
 }
 
 body{
-    max-width: 1280px;
+    max-width: 960px;
     margin: auto;
     padding-bottom: 5rem;
     font-family: 'Acme', sans-serif;
-    background-image: linear-gradient(to right, var(--light) 50%, var(--dark) 50%);
 }
 
 header{
@@ -24,7 +23,7 @@ header{
     padding: 0 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header a{
@@ -34,9 +33,6 @@ header a{
     text-decoration: none;
 }
 
-header a+a{
-    color: var(--light);
-}
 
 header a:hover{
     color: var(--hover-color);
@@ -55,20 +51,22 @@ input{
 }
 
 #menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
     color: var(--light);
     border-radius: 50%;
     padding: 0.8rem;
     position: fixed;
-    bottom: 2rem;
+    bottom: 1rem;
     right: 2rem;
     cursor: pointer;
     transition: box-shadow 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .hamburguer{
-    position: relative;
-    display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     animation: loop 0.8s infinite ;
 }
 
@@ -92,49 +90,16 @@ input{
     }
 }
 
-input:checked ~ label #menu{
-    box-shadow: 0 0 0 200vw var(--dark);
-}
-
-/* CONTATOS */
-ul{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    transition-delay: 0.2s; 
-    opacity: 0;
-}
-
-input:checked ~ ul{
-    transition-delay: 1.5s;
-    opacity: 1;
-}
-
-li{
-    text-align: center;
-}
-
-ul a{
-    display: block;
-    text-decoration: none;
-    margin-bottom: 60px;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-}
-
-ul a:hover{
-    transform: scale(2);
-}
-
-ul a img{
-    transition-delay: 2s;
-    width: 8rem;
-}
-
 #social{
     display: none;
+    gap: 1.5rem;
+    color: var(--light);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#social img{
+    width: 3rem;
 }
 
 /*  RESPONSIVE  */

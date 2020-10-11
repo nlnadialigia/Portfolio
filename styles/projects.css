@@ -6,27 +6,17 @@
 }
 
 body{
-    background: var(--light);
+    background-color: var(--dark);
 }
 
-header, footer{
-    margin: 0;
-}
-
-header a+a{
-    color: var(--dark);
-}
-
-header h1{
-    text-align: center;
-    padding: 0 2rem;
+header a{
     color: var(--light);
 }
 
 main{
     height: 50rem;
-    display: none;
-    grid-template-columns: 20rem 40rem 20rem;
+    display: grid;
+    grid-template-columns: 10% 90%;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -47,8 +37,8 @@ main #title p {
     color: var(--bg01);
     margin-top: 2rem;
     width: 1px;
-    position: absolute;
-    left: 1.5rem;
+    position: relative;
+    left: 2rem;
     animation: blink 6s linear infinite;
 }
 
@@ -61,38 +51,40 @@ main #title p {
     25% { opacity: 1;}
 }
 
-main .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8%;
+main #grid{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     
 }
 
-main .grid .items{
-    height: 15rem;
+main #grid .items{
+    height: 18rem;
     width: 12rem;
+    margin: 2rem;
     border-radius: 0.5rem;
     background: linear-gradient(to right, var(--bg01) 50%, var(--bg02) 50%);
-    box-shadow: 10px 5px 5px var(--light);
-    transition: transform 0.8s cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 10px 5px 5px var(--dark);
+    transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-main .grid .items:hover{
+main #grid .items:hover{
     transform: translateY(-10px);
     transform: scale(1.2);
-    box-shadow: 10px 5px 5px var(--bg01);
+    box-shadow: 10px 5px 5px var(--light);
 }
 
-.grid .items a{
-    width: 7rem;
-    /* transform: rotate(-45deg); */
-    
+main .items img{
+    width: 8rem;
+    border-radius: 50%;
 }
 
-.hex{
+/* .hex{
     background-color: var(--light);
     width: 80px;
     height: 80px;
@@ -106,7 +98,7 @@ main .grid .items:hover{
     transform: rotate(45deg);
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);    
 }
-/* 
+
 .hex:hover{
     width: 80px;
     height: 80px;
@@ -114,8 +106,44 @@ main .grid .items:hover{
     left: 29%;
 } */
 
-section{
+.contact{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+.contact img{
+    width: 5rem;
+    background-color: var(--bg01);
+    margin: 2rem;
+    animation: image 6s linear infinite;
+}
+
+@keyframes image{
+    0% { opacity: 0.3}
+    5% { opacity: 1;}
+    10% { opacity: 0.}
+    15% { opacity: 1;}
+    20% { opacity: 0.3}
+    25% { opacity: 1;}
+}
+
+.github{
+    border-radius: 50%;
+}
+
+.linkedin{
+    border-radius: 20%;
+}
+
+.email{
+    border-radius: 10%;
+}
+
+section{
+    display: none;
     align-items: center;
     justify-content: center;
     padding-top: 10rem;
