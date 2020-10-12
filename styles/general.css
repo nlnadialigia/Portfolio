@@ -33,7 +33,6 @@ header a{
     text-decoration: none;
 }
 
-
 header a:hover{
     color: var(--hover-color);
 }
@@ -45,10 +44,7 @@ h1, h2, h3{
     color: var(--hover-color);
 }
 
-/*  MENU  */
-input{
-    display: none;
-}
+/* FOOTER */
 
 #menu{
     display: flex;
@@ -103,4 +99,38 @@ input{
 }
 
 /*  RESPONSIVE  */
+
+@media(max-width:420px){
+    body{
+        padding-bottom: 1rem;
+    }
+    
+    header{
+        height: 3rem;
+        padding: 0 1rem;
+    }
+    
+    header a{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #menu{
+        position: relative;
+        right: 0.5rem;
+        bottom: 0;
+    }
+
+    .hamburguer{
+        font-size: 1.2rem;
+    }
+
+    #social img{
+        width: 2rem;
+    }
+}
 

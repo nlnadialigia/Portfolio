@@ -95,36 +95,6 @@ main .items img:hover{
     width: 7rem;
 }
 
-
-
-
-
-
-
-
-
-/* .hex{
-    background-color: var(--light);
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    margin: auto;
-    position: absolute;
-    top: 34%;
-    left: 29%;
-    box-shadow: 10px 5px 5px var(--bg01);
-    transform: translate(-50%, -50%);
-    transform: rotate(45deg);
-    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);    
-}
-
-.hex:hover{
-    width: 80px;
-    height: 80px;
-    top: 34%;
-    left: 29%;
-} */
-
 .contact{
     display: flex;
     flex-direction: column;
@@ -149,49 +119,30 @@ main .items img:hover{
     25% { opacity: 1;}
 }
 
-.github{
-    border-radius: 50%;
-}
-
-.linkedin{
-    border-radius: 20%;
-}
-
-.email{
-    border-radius: 10%;
-}
-
-section{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10rem;
-}
-
-section img{
-    width: 40rem;
-}
-
 @media(max-width: 420px){
-    body{
-        background: var(--dark);
+    main{
+        height: auto;
     }
 
-    header{
-        background: var(--light);
+    main #title p {
+        font-size: 2rem;
+        left: 1.5rem;
+        position: absolute;
+        top: 2rem;
     }
 
+    main #grid .items{
+        height: 10rem;
+        width: 7rem;
+        margin: 1rem;
+    }
+
+    main .items img{
+        width: 5rem;
+    }
     
-    #social{
-        justify-content: center;
-    }
-
-    section{
-        padding: 5rem;
-    }
-
-    section img{
-        width: 15rem;
+    main .items img:hover{
+        transform: scale(1.3);
     }
 }
 

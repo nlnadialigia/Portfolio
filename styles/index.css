@@ -60,5 +60,18 @@ section h2{
     margin-top: 4rem;
 }
 
+/* RESPONSIVE */
+@media(max-width: 420px){
+    main{
+        padding: 1rem;
+    }
 
+    main h1{
+        font-size: 4rem;
+    }
+
+    section{
+        padding: 0 1rem;
+    }
+}
 

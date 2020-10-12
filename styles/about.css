@@ -46,7 +46,6 @@ body{
     text-align: justify;
     font-size: 1.8rem;
     font-weight: lighter;
-    
     margin-top: 1.5rem;
 }
 
@@ -59,72 +58,23 @@ body{
     width: 2.2rem;
 }
 
-@media (max-height: 800px){
-    body{
-        padding-bottom: 2.5rem;
-    }
-    header{
-        height: 3rem;
-        padding-top: 0.5rem;
-    }
+/* RESPONSIVE */
+@media(max-width: 420px){
     .about{
         margin-top: 0;
+        font-size: 1.2rem;
     }
 
-    #menu{
-        bottom: 1rem;
-        right: 1rem;
-    }
-}
-
-@media (max-width: 420px){
-    body,header{
-        background: var(--dark);
-    }
-
-    header a+a{
-        color: var(--dark);
-    }
-
-    .about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 2rem;
-    }
-
-    .perfil, header{
-        margin: 0;
-        background: var(--light);
-    }
-
-    .perfil img{
-        margin-top: 2rem;
-    }
-
-    .perfil h2{
-        font-size: 2rem;
-        color: var(--hover-color);
-    }
-
-    .perfil p{
-        margin: 0 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .content{
-        background: var(--dark);
-        margin: 0;
-        padding: 0;
+    .about p{
+        font-size: 1.5rem;
+        margin-bottom: 0;
     }
 
     .content p{
-        margin: 2rem;
-        font-size: 1.8rem;
-        line-height: 2rem;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
     }
+    
 
-    #social{
-        justify-content: center;
-    }
+ 
 }
