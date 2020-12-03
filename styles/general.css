@@ -1,136 +1,130 @@
-:root{
-    --dark: #000000;
-    --light: #cac7c7;
-    --hover-color: #b81c3d;
-    --title: #000000c9;
+:root {
+  --dark: #000000;
+  --light: #cac7c7;
+  --hover-color: #7d0633;
+  --title: #000000c9;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    max-width: 960px;
-    margin: auto;
-    padding-bottom: 5rem;
-    font-family: 'Acme', sans-serif;
+body {
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Acme', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
-header{
-    height: 5rem;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+header {
+  height: 80px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-header a{
-    color: var(--dark);
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-decoration: none;
+header a {
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--light);
 }
 
-header a:hover{
-    color: var(--hover-color);
+header a:hover {
+  color: var(--hover-color);
 }
 
-h1, h2, h3{
-    padding-bottom: 1.5rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: var(--hover-color);
+h1, h2, h3 {
+  padding-bottom: 1.80px;
+  text-transform: uppercase;
+  color: var(--hover-color);
 }
 
 /* FOOTER */
 
-#menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    color: var(--light);
-    border-radius: 50%;
-    padding: 0.8rem;
-    position: fixed;
-    bottom: 1rem;
-    right: 2rem;
-    cursor: pointer;
-    transition: box-shadow 3s cubic-bezier(0.19, 1, 0.22, 1);
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.80px;
+  color: var(--light);
+  border-radius: 50%;
+  padding: 8px;
+  position: fixed;
+  bottom: 8px;
+  right: 32px;
+  cursor: pointer;
+  transition: box-shadow 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.hamburguer{
-    font-size: 1.5rem;
-    animation: loop 0.8s infinite ;
+.hamburguer {
+  font-size: 18px;
+  animation: loop 0.8s infinite;
 }
 
-.hamburguer:hover{
-    animation: none;
+.hamburguer:hover, .blink:hover {
+  animation: none;
+  background: linear-gradient(var(--dark), var(--hover-color), var(--light));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes loop {
+  0% {
+    background: linear-gradient(var(--light), var(--dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
     background: linear-gradient(var(--dark), var(--hover-color), var(--light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
 }
 
-@keyframes loop{
-    0% {
-        background: linear-gradient(var(--light), var(--dark));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100% {
-        background: linear-gradient(var(--dark), var(--hover-color), var(--light));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+#social {
+  display: none;
+  gap: 1.80px;
+  color: var(--light);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-#social{
-    display: none;
-    gap: 1.5rem;
-    color: var(--light);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#social img{
-    width: 3rem;
+#social img {
+  width: 36px;
 }
 
 /*  RESPONSIVE  */
 
-@media(max-width:420px){
-    body{
-        padding-bottom: 1rem;
-    }
-    
-    header{
-        height: 3rem;
-        padding: 0 1rem;
-    }
-    
-    header a{
-        font-size: 1.2rem;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    #menu{
-        position: relative;
-        right: 0.5rem;
-        bottom: 0;
-    }
-
-    .hamburguer{
-        font-size: 1.2rem;
-    }
-
-    #social img{
-        width: 2rem;
-    }
+@media(max-width:420px) {
+  body {
+    padding-bottom: 16px;
+  }
+  header {
+    height: 48px;
+    padding: 0 16px;
+  }
+  header a {
+    font-size: 1.32px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #menu {
+    position: relative;
+    right: 0.80px;
+    bottom: 0;
+  }
+  .hamburguer {
+    font-size: 1.32px;
+  }
+  #social img {
+    width: 32px;
+  }
 }
-

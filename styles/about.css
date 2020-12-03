@@ -1,80 +1,72 @@
-
-body{
-    background-color: var(--light);
+.about {
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px auto;
+  max-width: 800px;
 }
 
-.about{
-    font-size: 1.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+.about h2 {
+  margin-bottom: 16px;
 }
 
-.about p{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.about p {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 
-.perfil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto 2rem;
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 32px;
 }
 
-.perfil img{
-    width: 10rem;
-    border-radius: 50%;
-    border: 0.2rem solid var(--light);
-    box-shadow: 0.1rem 0.1rem var(--hover-color);
-    margin-bottom: 1.5rem;
+.perfil img {
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid var(--light);
+  box-shadow: 0.16px 0.16px var(--hover-color);
+  margin-bottom: 24px;
 }
 
-.content{
-    margin: auto 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.content {
+  margin: auto 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.content p{
-    text-align: justify;
-    font-size: 1.8rem;
-    font-weight: lighter;
-    margin-top: 1.5rem;
+.content p {
+  text-align: justify;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 24px;
 }
 
-.content h3{
-    margin-top: 2rem;
-    padding-bottom: 0;
-}
-
-.content i{
-    width: 2.2rem;
+.content h3 {
+  margin-top: 16px;
+  padding-bottom: 0;
 }
 
 /* RESPONSIVE */
-@media(max-width: 420px){
-    .about{
-        margin-top: 0;
-        font-size: 1.2rem;
-    }
 
-    .about p{
-        font-size: 1.5rem;
-        margin-bottom: 0;
-    }
-
-    .content p{
-        font-size: 1.2rem;
-        margin-top: 1.2rem;
-    }
-    
-
- 
+@media(max-width: 420px) {
+  .about {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .about p {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  .content p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
 }

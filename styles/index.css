@@ -1,77 +1,71 @@
-
-body{
-    background-image: linear-gradient(to right, var(--light) 50%, var(--dark) 50%);
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
 }
 
-
-header a+a{
-    color: var(--light);
+main h1 {
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: play 3s ease;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem;
+@keyframes play {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-main h1{
-    font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, var(--dark) 50%,  var(--light) 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: play 3s ease;
+main p {
+  animation: loop 5s infinite;
 }
 
-@keyframes play{
-    from {opacity: 0;}
-    to {opacity: 1;}
+section {
+  font-size: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+  margin: auto 48px;
+  animation: play2 3s ease;
 }
 
-section{
-    font-size: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 3rem;
-    margin: auto 3rem;
-    background: linear-gradient(to right, var(--dark) 50%,  var(--light) 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: play2 3s ease;
+@keyframes play2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes play2{
-    from {opacity: 0;}
-    to {opacity: 1;}
+section p+p {
+  margin-top: 32px;
 }
 
-section p+p{
-    margin-top: 1.5rem;
-}
-
-section h2{
-    margin-top: 4rem;
+section h2 {
+  margin-top: 64px;
 }
 
 /* RESPONSIVE */
-@media(max-width: 420px){
-    main{
-        padding: 1rem;
-    }
 
-    main h1{
-        font-size: 4rem;
-    }
-
-    section{
-        padding: 0 1rem;
-    }
+@media(max-width: 420px) {
+  main {
+    padding: 16px;
+  }
+  main h1 {
+    font-size: 64px;
+  }
+  section {
+    padding: 0 16px;
+  }
 }
-
