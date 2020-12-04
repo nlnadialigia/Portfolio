@@ -2,9 +2,9 @@
 const cards = document.getElementById('grid');
 const projects = [
   { name: 'rocketseat', link: 'rocketseat.html', image: 'rocket.png' },
-  { name: 'igti', link: 'igti.html', image: 'igti.png' },
-  { name: 'wizard', link: 'wizard.html', image: 'logo-wizard.png' },
   { name: 'day30', link: '30D.html', image: '30D.png' },
+  { name: 'wizard', link: 'wizard.html', image: 'logo-wizard.png' },
+  { name: 'igti', link: 'igti.html', image: 'igti.png' },
   { name: 'others', link: 'others.html', image: 'others.png' },
 ];
 
