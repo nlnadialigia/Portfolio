@@ -14,7 +14,7 @@ header a {
 }
 
 main {
-    height: 50rem;
+    height: 800px;
     display: grid;
     grid-template-columns: 10% 90%;
     align-items: center;
@@ -32,13 +32,13 @@ main #title p {
     text-transform: uppercase;
     word-break: break-word;
     white-space: pre-wrap;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
     color: var(--bg01);
-    margin-top: 2rem;
+    margin-top: 32px;
     width: 1px;
     position: relative;
-    left: 2rem;
+    left: 32px;
     animation: blink 6s linear infinite;
 }
 
@@ -74,10 +74,10 @@ main #grid {
 }
 
 main #grid .items {
-    height: 18rem;
-    width: 12rem;
-    margin: 2rem;
-    border-radius: 0.5rem;
+    height: 288px;
+    width: 192px;
+    margin: 32px;
+    border-radius: 8px;
     background: linear-gradient(to right, var(--bg01) 50%, var(--bg02) 50%);
     box-shadow: 10px 5px 5px var(--dark);
     transition: transform 0.5s cubic-bezier(0, 0, 0.2, 1);
@@ -104,12 +104,12 @@ main .items img:hover {
 .rocketseat,
 .wizard,
 .igti {
-    width: 8rem;
+    width: 128px;
 }
 
 .day30,
 .others {
-    width: 7rem;
+    width: 112px;
 }
 
 .contact {
@@ -120,9 +120,9 @@ main .items img:hover {
 }
 
 .contact img {
-    width: 5rem;
+    width: 80px;
     background-color: var(--bg01);
-    margin: 2rem;
+    margin: 32px;
     animation: image 6s linear infinite;
 }
 
@@ -152,10 +152,10 @@ main .items img:hover {
         height: auto;
     }
     main #title p {
-      font-size: 2rem;
+      font-size: 32px;
       left: 1.5rem;
       position: absolute;
-      top: 2rem;
+      top: 32px;
     }
     main #grid .items {
         height: 10rem;
