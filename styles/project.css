@@ -27,6 +27,10 @@ header a {
   justify-content: center;
 }
 
+.title img{
+  width: 50%;
+}
+
 .about-project a{
   color: var(--hover-color);
   animation: loop 0.8s infinite;
