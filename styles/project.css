@@ -21,6 +21,12 @@ header a {
   margin-top: 10%;
 }
 
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-project a{
   color: var(--hover-color);
   animation: loop 0.8s infinite;
