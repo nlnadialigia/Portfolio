@@ -21,6 +21,11 @@ header a {
   margin-top: 10%;
 }
 
+.about-project a{
+  color: var(--hover-color);
+  animation: loop 0.8s infinite;
+}
+
 main {
   margin: 32px;
 }
