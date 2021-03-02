@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 
 body {
@@ -44,7 +43,23 @@ h1, h2, h3 {
   color: var(--hover-color);
 }
 
+a {
+  text-decoration: none;
+  opacity: 0.7;
+  color: var(--light);
+}
+
+a:hover {
+  opacity: 1;
+  color: var(--hover-color);
+}
+
 /* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 #menu {
   display: flex;
@@ -53,10 +68,10 @@ h1, h2, h3 {
   gap: 1.80px;
   color: var(--light);
   border-radius: 50%;
-  padding: 8px;
-  position: fixed;
-  bottom: 8px;
+  padding: 4px;
+  position: relative;
   right: 32px;
+  bottom: 4px;
   cursor: pointer;
   transition: box-shadow 3s cubic-bezier(0.19, 1, 0.22, 1);
 }
